@@ -27,7 +27,7 @@ jobs:
 
         - name: run docker container 
           run: |
-            docker run -d --name mmpark01 -p 8080:8080 massai_park:v1
+            docker run -d --name mmpark01 -p 8080:8080 massai_mara:v1
             sleep 20
 
             docker ps
