@@ -45,7 +45,7 @@ jobs:
           -o "StrictHostKeyChecking=no" \
           -o "UserKnownHostsFile=/dev/null" \
           -P 22  README.md  \
-          ${{env.EC2_USERNAME}}@${{secrets.EC2_HOSTNAME}}~/ 
+          ${{env.EC2_USERNAME}}@${{secrets.EC2_HOSTNAME}}:~/ 
 
       - name: cleanup private key 
         if: always()
