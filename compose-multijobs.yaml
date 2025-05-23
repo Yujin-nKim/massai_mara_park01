@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  app:
+    image: massai_mara:latest
+    container_name: mssai_mara_app
+    ports:
+      - "8080:8080"
+
+# 이전 버전과 비교 - build 부분이 빠짐
